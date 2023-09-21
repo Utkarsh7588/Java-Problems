@@ -5,7 +5,8 @@ public class NKnights {
     public static void main(String[] args) {
         int n = 4;
         boolean[][] board = new boolean[n][n];
-        System.out.println(knights(board, 0));
+//        System.out.println(knights(board, 0));
+        nknights(board,0,0,6);
     }
 
     public static int knights(boolean[][] board, int row){
@@ -26,6 +27,30 @@ public class NKnights {
         return count;
     }
 
+    public static void nknights(boolean[][] board, int row, int col, int n){
+        if (n == 0) {
+            display(board);
+            System.out.println();
+            return;
+        }
+
+        if (row == board.length - 1 && col == board.length) {
+            return;
+        }
+
+        if (col == board.length) {
+            nknights(board, row + 1, 0, n);
+            return;
+        }
+
+        if (isSafe(board, row, col)) {
+            board[row][col] = true;
+            nknights(board, row, col + 1, n- 1);
+            board[row][col] = false;
+        }
+
+        nknights(board, row, col + 1, n);
+    }
     private static boolean isSafe(boolean[][] board, int row, int col) {
 
         if(row-2>=0&&col-1>=0){
@@ -49,10 +74,7 @@ public class NKnights {
             }
         }
         return true;
-        //check on upper left and right
-//        int maxLeft=Math.min(row-1,col-1);
-//        while()
-//        int maxRight=Math.min(row-1,board.length-1-col);
+
     }
 
     private static void display(boolean[][] board) {
