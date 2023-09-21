@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="be28b9a5-1ce0-42e9-9ffc-0b17a939063b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/backtracking/Sudoku.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backtracking/NKnights.java" beforeDir="false" afterPath="$PROJECT_DIR$/backtracking/NKnights.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Assignments/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Assignments/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
